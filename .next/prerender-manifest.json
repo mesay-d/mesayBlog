@@ -1,10 +1,10 @@
 {
   "version": 4,
   "routes": {
-    "/": {
+    "/posts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/index.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -14,10 +14,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/posts": {
+    "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -31,7 +31,35 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/Angular.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/Angular.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/posts/aws": {
+      "initialRevalidateSeconds": 600,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": "/posts/[slug]",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/aws.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/posts/azure": {
+      "initialRevalidateSeconds": 600,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": "/posts/[slug]",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/azure.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -45,7 +73,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/mastering-javascript.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/mastering-javascript.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -59,7 +87,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/nextjs.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/nextjs.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,7 +101,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/Node.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/Node.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -87,7 +115,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/react.json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/react.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -101,9 +129,9 @@
   "dynamicRoutes": {
     "/posts/[slug]": {
       "routeRegex": "^/posts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/[slug].json",
+      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/posts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",

@@ -36,6 +36,12 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
       "page": "/contact",
       "regex": "^/contact(?:/)?$",
       "routeKeys": {},
@@ -51,19 +57,19 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/tj_mnSO3J0bDu2hsjTQXn/index\\.json$"
+      "dataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/index\\.json$"
     },
     {
       "page": "/posts",
-      "dataRouteRegex": "^/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts\\.json$"
+      "dataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/posts\\.json$"
     },
     {
       "page": "/posts/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/tj_mnSO3J0bDu2hsjTQXn/posts/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/posts/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/posts/(?<nxtPslug>[^/]+?)\\.json$"
     }
   ],
   "rsc": {
