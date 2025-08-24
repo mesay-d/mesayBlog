@@ -1,10 +1,10 @@
 {
   "version": 4,
   "routes": {
-    "/posts": {
+    "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -14,10 +14,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/posts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/index.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -31,7 +31,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/Angular.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/Angular.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -45,7 +45,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/aws.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/aws.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -59,7 +59,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/azure.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/azure.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,7 +73,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/mastering-javascript.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/mastering-javascript.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -87,7 +87,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/nextjs.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/nextjs.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -101,7 +101,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/Node.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/Node.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -115,7 +115,7 @@
       "initialRevalidateSeconds": 600,
       "initialExpireSeconds": 31536000,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/react.json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/react.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -129,9 +129,9 @@
   "dynamicRoutes": {
     "/posts/[slug]": {
       "routeRegex": "^/posts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/kuHqZc4FtlabIJmgp8d35/posts/[slug].json",
+      "dataRoute": "/_next/data/xVPk708V3nHg51ibtH-gF/posts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/kuHqZc4FtlabIJmgp8d35/posts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/xVPk708V3nHg51ibtH\\-gF/posts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -144,8 +144,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "8c33aa0e2d341b591542242e772043cc",
-    "previewModeSigningKey": "a443318f45257087c80ba997824deece76dfab91ede9cf38cff7825a573c7b8e",
-    "previewModeEncryptionKey": "2684f46e3a57020c7f127f094c66e633469824eae8e1593e6ca29a04282e7e97"
+    "previewModeId": "6b5938185920f3106c8eed1ab98f8af8",
+    "previewModeSigningKey": "6f398f0516422641f68738f57a9ef6cf52319e48ae1928beda94122fbcbd87fe",
+    "previewModeEncryptionKey": "ec3b6f2b8d32efdcd48d988803b859e3e0a4c70b68d05f17a29aefc40c28a805"
   }
 }
