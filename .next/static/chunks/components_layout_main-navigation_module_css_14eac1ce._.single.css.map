@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/main-navigation.module.css"],"sourcesContent":[".header {\r\n  width: 100%;\r\n  height: 6rem;\r\n  background-color: var(--color-bg-800);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 6%;\r\n}\r\n\r\n.header ul {\r\n  list-style: none;\r\n  display: flex;\r\n  align-items: baseline;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.header li {\r\n  margin: 0 var(--size-4);\r\n}\r\n\r\n.header a {\r\n  color: var(--color-grey-50);\r\n  font-size: var(--size-4);\r\n}\r\n\r\n.header a:hover,\r\n.header a:active,\r\n.header a.active {\r\n  color: var(--color-grey-200);\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .header ul {\r\n    gap: 0.5rem;\r\n  }\r\n\r\n  .header a {\r\n    font-size: var(--size-5);\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUA;;;;;;;;AAQA;;;;AAIA;;;;;AAKA;;;;AAMA;EACE;;;;EAIA"}}]
+}

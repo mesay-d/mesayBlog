@@ -1,0 +1,97 @@
+/* [project]/pages/login.module.css [client] (css) */
+.login-module__lgJPRG__wrapper {
+  color: #fff;
+  background: linear-gradient(#0b1220 0%, #07101a 100%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+
+.login-module__lgJPRG__card {
+  background: #0f1720;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 480px;
+  padding: 28px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, .6);
+}
+
+.login-module__lgJPRG__title {
+  color: #fff;
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.login-module__lgJPRG__subtitle {
+  color: #9ca3af;
+  margin: 0 0 18px;
+  font-size: .95rem;
+}
+
+.login-module__lgJPRG__formGroup {
+  margin-bottom: 14px;
+}
+
+.login-module__lgJPRG__label {
+  color: #e5e7eb;
+  margin-bottom: 6px;
+  font-size: .9rem;
+  display: block;
+}
+
+.login-module__lgJPRG__input {
+  color: #fff;
+  box-sizing: border-box;
+  background: #07101a;
+  border: 1px solid #23303b;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.login-module__lgJPRG__input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, .08);
+}
+
+.login-module__lgJPRG__actions {
+  justify-content: flex-end;
+  margin-top: 6px;
+  display: flex;
+}
+
+.login-module__lgJPRG__button {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(#2563eb, #1e40af);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 600;
+}
+
+.login-module__lgJPRG__button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.login-module__lgJPRG__error {
+  color: #fecaca;
+  background: rgba(244, 63, 94, .08);
+  border: 1px solid rgba(244, 63, 94, .16);
+  border-radius: 6px;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+.login-module__lgJPRG__note {
+  color: #94a3b8;
+  margin-top: 12px;
+  font-size: .85rem;
+}
+
+/*# sourceMappingURL=pages_login_module_8489cf33.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/mesay/Desktop/nextj/blog/Blogmesay/myblog/pages/_document.js"],"sourcesContent":["import Document, { Html, Head, Main, NextScript } from 'next/document';\r\n\r\nclass MyDocument extends Document {\r\n  render() {\r\n    return (\r\n      <Html lang='en'>\r\n        <Head />\r\n        <body>\r\n          <Main />\r\n          <NextScript />\r\n          <div id=\"notifications\"></div>\r\n        </body>\r\n      </Html>\r\n    );\r\n  }\r\n}\r\n\r\nexport default MyDocument;\r\n"],"names":[],"mappings":";;;;AAAA;;;AAEA,MAAM,mBAAmB,yHAAA,CAAA,UAAQ;IAC/B,SAAS;QACP,qBACE,qKAAC,yHAAA,CAAA,OAAI;YAAC,MAAK;;8BACT,qKAAC,yHAAA,CAAA,OAAI;;;;;8BACL,qKAAC;;sCACC,qKAAC,yHAAA,CAAA,OAAI;;;;;sCACL,qKAAC,yHAAA,CAAA,aAAU;;;;;sCACX,qKAAC;4BAAI,IAAG;;;;;;;;;;;;;;;;;;IAIhB;AACF;uCAEe","debugId":null}}]
+}

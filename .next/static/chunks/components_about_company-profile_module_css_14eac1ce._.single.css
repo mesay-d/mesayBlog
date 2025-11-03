@@ -1,0 +1,126 @@
+/* [project]/components/about/company-profile.module.css [client] (css) */
+.company-profile-module__gbVcRa__company {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 1.25rem 0 1.75rem;
+  display: flex;
+}
+
+.company-profile-module__gbVcRa__logos {
+  flex: 320px;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  overflow: hidden;
+}
+
+.company-profile-module__gbVcRa__track {
+  gap: 16px;
+  animation: 18s linear infinite company-profile-module__gbVcRa__scroll;
+  display: flex;
+}
+
+@keyframes company-profile-module__gbVcRa__scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.company-profile-module__gbVcRa__logoItem {
+  background: rgba(255, 255, 255, .03);
+  border: 1px solid rgba(255, 255, 255, .04);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  animation: 4s ease-in-out infinite company-profile-module__gbVcRa__float;
+  display: flex;
+  overflow: hidden;
+}
+
+@keyframes company-profile-module__gbVcRa__float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.company-profile-module__gbVcRa__tagline {
+  background: linear-gradient(rgba(127, 215, 255, .04), rgba(127, 215, 255, .02));
+  border: 1px solid rgba(127, 215, 255, .06);
+  border-radius: 8px;
+  flex: 0 0 320px;
+  padding: 14px;
+}
+
+.company-profile-module__gbVcRa__tagline h3 {
+  color: var(--color-primary-100);
+  margin: 0 0 6px;
+}
+
+.company-profile-module__gbVcRa__tagline p {
+  color: var(--color-grey-100);
+  margin: 0 0 8px;
+}
+
+.company-profile-module__gbVcRa__quickForm {
+  gap: 8px;
+  display: flex;
+}
+
+.company-profile-module__gbVcRa__quickForm textarea {
+  min-height: 64px;
+  color: var(--color-grey-50);
+  background: rgba(0, 0, 0, .12);
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 6px;
+  flex: 200px;
+  padding: 10px;
+}
+
+.company-profile-module__gbVcRa__quickForm button {
+  background: var(--color-primary-400);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.company-profile-module__gbVcRa__btnContinue {
+  color: var(--color-primary-100);
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgba(127, 215, 255, .12);
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.company-profile-module__gbVcRa__btnContinue:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.company-profile-module__gbVcRa__notice {
+  color: var(--color-success-100);
+  margin-top: 8px;
+  font-size: .9rem;
+}
+
+/*# sourceMappingURL=components_about_company-profile_module_css_14eac1ce._.single.css.map*/

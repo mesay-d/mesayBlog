@@ -1,6 +1,7 @@
 import classes from './about.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import CompanyProfile from '../../components/about/company-profile';
 
 function About() {
   return (
@@ -23,6 +24,8 @@ function About() {
           For state management and data fetching, I use <strong>Redux</strong> and <strong>React Query</strong>, along with modern tools and libraries including <strong>TypeScript, RxJS, Express, REST & GraphQL APIs</strong>.
         </p>
       </div>
+      
+  <CompanyProfile />
 
       <div className={classes.section}>
         <h2>My Journey</h2>

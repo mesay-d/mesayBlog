@@ -1,36 +1,46 @@
 .contact {
   margin: var(--size-8) auto;
-  border-radius: 6px;
-  background-color: var(--color-grey-100);
-  width: 90%;
-  max-width: 50rem;
-  padding: var(--size-4);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background-color: var(--color-bg-900);
+  width: 94%;
+  max-width: 60rem;
+  padding: var(--size-6);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
   font-size: var(--size-6);
+  color: var(--color-grey-50);
 }
 
 .contact h1 {
-  font-size: var(--size-8);
-  margin: var(--size-4) 0;
-  text-align: left;
+  font-size: var(--size-10);
+  margin: var(--size-2) 0 var(--size-4) 0;
+  text-align: center;
+  color: var(--color-primary-100);
 }
 
 .form label {
   display: block;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   margin: var(--size-2) 0 var(--size-1) 0;
+  color: var(--color-grey-100);
 }
 
 .form input,
 .form textarea {
   font: inherit;
-  padding: var(--size-1);
-  border-radius: 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
   width: 100%;
-  border: 1px solid var(--color-grey-400);
-  background-color: var(--color-grey-50);
-  resize: none;
+  border: 1px solid rgba(255,255,255,0.04);
+  background-color: rgba(255,255,255,0.02);
+  color: var(--color-grey-50);
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(127,215,255,0.06);
+  border-color: rgba(127,215,255,0.18);
 }
 
 .controls {
@@ -41,7 +51,7 @@
 
 .control {
   flex: 1;
-  min-width: 10rem;
+  min-width: 12rem;
 }
 
 .actions {
@@ -52,17 +62,27 @@
 .form button {
   font: inherit;
   cursor: pointer;
-  background-color: var(--color-primary-700);
-  border: 1px solid var(--color-primary-700);
-  padding: var(--size-2) var(--size-4);
-  border-radius: 4px;
-  color: var(--color-primary-50);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, var(--color-primary-300), var(--color-primary-400));
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-.form button:hover {
-  background-color: var(--color-primary-500);
-  border-color: var(--color-primary-500);
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.error {
+  margin-top: 6px;
+  color: #ffb4b4;
+  font-size: 0.95rem;
 }
 
 @media (min-width: 768px) {

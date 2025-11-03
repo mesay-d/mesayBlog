@@ -1,0 +1,43 @@
+/* [project]/components/layout/main-navigation.module.css [client] (css) */
+.main-navigation-module__f-saWa__header {
+  background-color: var(--color-bg-800);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  padding: 0 6%;
+  display: flex;
+}
+
+.main-navigation-module__f-saWa__header ul {
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation-module__f-saWa__header li {
+  margin: 0 var(--size-4);
+}
+
+.main-navigation-module__f-saWa__header a {
+  color: var(--color-grey-50);
+  font-size: var(--size-4);
+}
+
+.main-navigation-module__f-saWa__header a:hover, .main-navigation-module__f-saWa__header a:active, .main-navigation-module__f-saWa__header a.main-navigation-module__f-saWa__active {
+  color: var(--color-grey-200);
+}
+
+@media (min-width: 768px) {
+  .main-navigation-module__f-saWa__header ul {
+    gap: .5rem;
+  }
+
+  .main-navigation-module__f-saWa__header a {
+    font-size: var(--size-5);
+  }
+}
+
+/*# sourceMappingURL=components_layout_main-navigation_module_css_14eac1ce._.single.css.map*/
