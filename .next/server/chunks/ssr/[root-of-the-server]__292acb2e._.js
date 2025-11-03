@@ -199,6 +199,7 @@ __turbopack_context__.v({
   "actions": "hero-module__O8P-pW__actions",
   "btnGhost": "hero-module__O8P-pW__btnGhost",
   "btnPrimary": "hero-module__O8P-pW__btnPrimary",
+  "btnSecondary": "hero-module__O8P-pW__btnSecondary",
   "content": "hero-module__O8P-pW__content",
   "fadeUp": "hero-module__O8P-pW__fadeUp",
   "hero": "hero-module__O8P-pW__hero",
@@ -289,12 +290,21 @@ function Hero() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/about",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$home$2d$page$2f$hero$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].btnSecondary,
+                                    children: "About Me"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/home-page/hero.js",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/contact",
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$home$2d$page$2f$hero$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].btnGhost,
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page/hero.js",
-                                    lineNumber: 30,
+                                    lineNumber: 31,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -314,7 +324,7 @@ function Hero() {
                                     children: "GitHub"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page/hero.js",
-                                    lineNumber: 34,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -322,7 +332,7 @@ function Hero() {
                                     children: "·"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page/hero.js",
-                                    lineNumber: 35,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
@@ -332,13 +342,13 @@ function Hero() {
                                     children: "LinkedIn"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page/hero.js",
-                                    lineNumber: 36,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/home-page/hero.js",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]

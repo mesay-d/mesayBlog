@@ -83,9 +83,47 @@ export default function MessagesPage() {
       <MessageList messages={messages} error={error} />
 
       <div style={{ marginTop: 12 }}>
-        <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1}>Prev</button>
-        <span style={{ margin: '0 8px' }}>Page {page} / {totalPages}</span>
-        <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages}>Next</button>
+        {/* Showing range */}
+        <div style={{ marginBottom: 8, color: '#cfd8e3' }}>
+          {total > 0 ? (
+            <span>
+              Showing {(page - 1) * limit + 1} - {Math.min(total, page * limit)} of {total} messages
+            </span>
+          ) : (
+            <span>Showing 0 messages</span>
+          )}
+        </div>
+
+        {/* Prev / numbered pages / Next */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1}>Prev</button>
+
+          {/* numbered page buttons */}
+          <div aria-label="Page navigation" role="navigation" style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+            {Array.from({ length: totalPages }).map((_, i) => {
+              const p = i + 1;
+              const active = p === page;
+              return (
+                <button
+                  key={p}
+                  onClick={() => setPage(p)}
+                  aria-current={active ? 'page' : undefined}
+                  style={{
+                    padding: '6px 10px',
+                    borderRadius: 6,
+                    background: active ? '#00a3d9' : 'transparent',
+                    color: active ? '#fff' : '#cfeaf7',
+                    border: active ? 'none' : '1px solid rgba(255,255,255,0.06)'
+                  }}
+                >
+                  {p}
+                </button>
+              );
+            })}
+          </div>
+
+          <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page >= totalPages}>Next</button>
+        </div>
       </div>
     </main>
   );

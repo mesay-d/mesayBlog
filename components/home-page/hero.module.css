@@ -79,6 +79,15 @@
   text-decoration: none;
 }
 
+.btnSecondary {
+  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(127,215,255,0.04));
+  color: var(--color-grey-50);
+  border: 1px solid rgba(127,215,255,0.06);
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
 .social {
   color: var(--color-grey-200);
   font-size: 0.95rem;

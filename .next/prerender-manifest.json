@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/posts/Angular":{},"/posts/aws":{},"/posts/azure":{},"/posts/mastering-javascript":{},"/posts/nextjs":{},"/posts/Node":{},"/posts/react":{}},"dynamicRoutes":{"/posts/[slug]":{"fallback":false}},"notFoundRoutes":[],"preview":{"previewModeId":"bf7f277a157fbfef06387b3fbac14298","previewModeSigningKey":"a64efbfc84138bfec732c29645dd3f49ff3a1dc862e5251ee85a139361a3ad74","previewModeEncryptionKey":"ff991ed7767ea122c527b51d95d30ea8f56c29328054ec27f3d0ee395a15a61b"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "def017f326b27838dd9871cd8eb57f43",
+    "previewModeSigningKey": "c916777538d458b51b2195ed851459f274fee990bce7b7ea5daf9101d7cbc7a3",
+    "previewModeEncryptionKey": "5026949431a70118cc40c47944343ad687aa3a631811ae11c72ca386a580c895"
+  }
+}

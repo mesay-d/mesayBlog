@@ -27,6 +27,7 @@ function Hero() {
 
           <div className={classes.actions}>
             <Link href="/posts" className={classes.btnPrimary}>View Posts</Link>
+            <Link href="/about" className={classes.btnSecondary}>About Me</Link>
             <Link href="/contact" className={classes.btnGhost}>Contact</Link>
           </div>
 
