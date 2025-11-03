@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/messages/message-stats.module.css"],"sourcesContent":[".container {\n  background-color: #1a1a1a;\n  border-radius: 8px;\n  padding: 20px;\n  margin-top: 24px;\n}\n\n.stats {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 16px;\n  margin-bottom: 24px;\n}\n\n.statCard {\n  background-color: #2d2d2d;\n  padding: 16px;\n  border-radius: 6px;\n  text-align: center;\n}\n\n.statCard h3 {\n  color: #999;\n  font-size: 0.9rem;\n  margin: 0 0 8px 0;\n}\n\n.statCard p {\n  color: #fff;\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin: 0;\n}\n\n.chartContainer {\n  height: 400px;\n  position: relative;\n  margin-top: 20px;\n}"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;AAOA;;;;;;;AAOA;;;;;;AAMA;;;;;;;AAOA"}}]
+}

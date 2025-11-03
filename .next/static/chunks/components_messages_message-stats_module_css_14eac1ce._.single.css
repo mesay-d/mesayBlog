@@ -1,0 +1,42 @@
+/* [project]/components/messages/message-stats.module.css [client] (css) */
+.message-stats-module__Du-pKG__container {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 20px;
+}
+
+.message-stats-module__Du-pKG__stats {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+  display: grid;
+}
+
+.message-stats-module__Du-pKG__statCard {
+  text-align: center;
+  background-color: #2d2d2d;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.message-stats-module__Du-pKG__statCard h3 {
+  color: #999;
+  margin: 0 0 8px;
+  font-size: .9rem;
+}
+
+.message-stats-module__Du-pKG__statCard p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.message-stats-module__Du-pKG__chartContainer {
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/*# sourceMappingURL=components_messages_message-stats_module_css_14eac1ce._.single.css.map*/

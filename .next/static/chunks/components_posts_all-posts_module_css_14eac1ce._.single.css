@@ -1,0 +1,20 @@
+/* [project]/components/posts/all-posts.module.css [client] (css) */
+.all-posts-module__jj5gjW__posts {
+  width: 90%;
+  max-width: 60rem;
+  margin: var(--size-8) auto;
+}
+
+.all-posts-module__jj5gjW__posts h1 {
+  font-size: var(--size-8);
+  color: var(--color-grey-800);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .all-posts-module__jj5gjW__posts h1 {
+    font-size: var(--size-16);
+  }
+}
+
+/*# sourceMappingURL=components_posts_all-posts_module_css_14eac1ce._.single.css.map*/

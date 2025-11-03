@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/posts/posts-grid.module.css"],"sourcesContent":[".grid {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));\r\n  gap: 1.5rem;\r\n  align-content: center;\r\n}\r\n"],"names":[],"mappings":"AAAA"}}]
+}

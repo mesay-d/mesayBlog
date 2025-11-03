@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/mesay/Desktop/nextj/blog/Blogmesay/myblog/pages/api/logout.js"],"sourcesContent":["export default function handler(req, res) {\n  // Clear the auth cookie by setting an expired cookie\n  const cookie = `auth=deleted; HttpOnly; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax`;\n  res.setHeader('Set-Cookie', cookie);\n  // Redirect back to home\n  res.writeHead(302, { Location: '/' });\n  res.end();\n}\n"],"names":[],"mappings":";;;AAAe,SAAS,QAAQ,GAAG,EAAE,GAAG;IACtC,qDAAqD;IACrD,MAAM,SAAS,CAAC,mFAAmF,CAAC;IACpG,IAAI,SAAS,CAAC,cAAc;IAC5B,wBAAwB;IACxB,IAAI,SAAS,CAAC,KAAK;QAAE,UAAU;IAAI;IACnC,IAAI,GAAG;AACT","debugId":null}}]
+}

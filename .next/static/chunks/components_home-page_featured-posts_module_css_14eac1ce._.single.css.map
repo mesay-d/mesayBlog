@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/home-page/featured-posts.module.css"],"sourcesContent":[".latest {\r\n  width: 90%;\r\n  max-width: 80rem;\r\n  margin: var(--size-8) auto;\r\n}\r\n\r\n.latest h2 {\r\n  font-size: var(--size-8);\r\n  color: var(--color-grey-800);\r\n  text-align: center;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .latest h2 {\r\n    font-size: var(--size-16);\r\n  }\r\n}"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;AAMA;EACE"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/logo.module.css"],"sourcesContent":[".logo {\r\n  text-transform: uppercase;\r\n  font-size: var(--size-5);\r\n  font-weight: bold;\r\n  font-family: 'Oswald', sans-serif;\r\n  color: var(--color-grey-50);\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .logo {\r\n    font-size: var(--size-8);\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;EACE"}}]
+}

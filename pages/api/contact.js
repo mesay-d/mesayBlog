@@ -12,7 +12,7 @@ async function handler(req, res) {
       !message ||
       message.trim() === ''
     ) {
-      res.status(422).json({ message: 'Invalid input.' });
+      res.status(422).json({ message: 'Please provide a valid name, email, and message.' });
       return;
     }
 
@@ -46,9 +46,7 @@ try {
 
     client.close();
 
-    res
-      .status(201)
-      .json({ message: 'Successfully stored message!', message: newMessage });
+    res.status(201).json({ message: 'Successfully stored message!', data: newMessage });
   }
 }
 

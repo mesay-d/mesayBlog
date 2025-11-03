@@ -1,0 +1,20 @@
+/* [project]/components/home-page/featured-posts.module.css [client] (css) */
+.featured-posts-module__clciTW__latest {
+  width: 90%;
+  max-width: 80rem;
+  margin: var(--size-8) auto;
+}
+
+.featured-posts-module__clciTW__latest h2 {
+  font-size: var(--size-8);
+  color: var(--color-grey-800);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .featured-posts-module__clciTW__latest h2 {
+    font-size: var(--size-16);
+  }
+}
+
+/*# sourceMappingURL=components_home-page_featured-posts_module_css_14eac1ce._.single.css.map*/

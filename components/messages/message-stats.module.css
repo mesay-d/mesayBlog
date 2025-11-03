@@ -1,0 +1,39 @@
+.container {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  background-color: #2d2d2d;
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.statCard h3 {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+}
+
+.statCard p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.chartContainer {
+  height: 400px;
+  position: relative;
+  margin-top: 20px;
+}

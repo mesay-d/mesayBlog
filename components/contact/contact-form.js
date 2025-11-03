@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import classes from './contact-form.module.css';
 import Notification from '../ui/notification';
@@ -23,8 +24,10 @@ function ContactForm() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredName, setEnteredName] = useState('');
   const [enteredMessage, setEnteredMessage] = useState('');
+  const [errors, setErrors] = useState({});
   const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
   const [requestError, setRequestError] = useState();
+  const router = useRouter();
 
   useEffect(() => {
     if (requestStatus === 'success' || requestStatus === 'error') {
@@ -37,11 +40,45 @@ function ContactForm() {
     }
   }, [requestStatus]);
 
+  // If navigated from the CompanyProfile with a prefilled message (query param `m`), use it.
+  useEffect(() => {
+    if (!router.isReady) return;
+    const { m } = router.query || {};
+    if (m && !enteredMessage) {
+      try {
+        const decoded = Array.isArray(m) ? m[0] : m;
+        setEnteredMessage(decodeURIComponent(decoded));
+        // remove query param from URL without reloading the page
+        router.replace(router.pathname, undefined, { shallow: true });
+      } catch {
+        // ignore malformed param
+      }
+    }
+  }, [router, enteredMessage]);
+
   async function sendMessageHandler(event) {
     event.preventDefault();
 
-    // optional: add client-side validation
+    // client-side validation
+    const newErrors = {};
+    if (!enteredEmail || !/^\S+@\S+\.\S+$/.test(enteredEmail)) {
+      newErrors.email = 'Please enter a valid email address.';
+    }
+    if (!enteredName || enteredName.trim().length < 2) {
+      newErrors.name = 'Please enter your name (2+ characters).';
+    }
+    if (!enteredMessage || enteredMessage.trim().length < 10) {
+      newErrors.message = 'Please enter a message (10+ characters).';
+    }
 
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      setRequestStatus('error');
+      setRequestError('Please fix the highlighted errors.');
+      return;
+    }
+
+    setErrors({});
     setRequestStatus('pending');
 
     try {
@@ -89,44 +126,64 @@ function ContactForm() {
   return (
     <section className={classes.contact}>
       <h1>How can I help you?</h1>
-      <form className={classes.form} onSubmit={sendMessageHandler}>
+
+      <form
+        className={classes.form}
+        onSubmit={sendMessageHandler}
+        aria-busy={requestStatus === 'pending'}
+      >
         <div className={classes.controls}>
           <div className={classes.control}>
-            <label htmlFor='email'>Your Email</label>
+            <label htmlFor="email">Your Email</label>
             <input
-              type='email'
-              id='email'
+              type="email"
+              id="email"
               required
               value={enteredEmail}
-              onChange={(event) => setEnteredEmail(event.target.value)}
+              onChange={(event) => {
+                setEnteredEmail(event.target.value);
+                setErrors((s) => ({ ...s, email: undefined }));
+              }}
             />
+            {errors.email && <p className={classes.error}>{errors.email}</p>}
           </div>
+
           <div className={classes.control}>
-            <label htmlFor='name'>Your Name</label>
+            <label htmlFor="name">Your Name</label>
             <input
-              type='text'
-              id='name'
+              type="text"
+              id="name"
               required
               value={enteredName}
-              onChange={(event) => setEnteredName(event.target.value)}
+              onChange={(event) => {
+                setEnteredName(event.target.value);
+                setErrors((s) => ({ ...s, name: undefined }));
+              }}
             />
+            {errors.name && <p className={classes.error}>{errors.name}</p>}
           </div>
         </div>
+
         <div className={classes.control}>
-          <label htmlFor='message'>Your Message</label>
+          <label htmlFor="message">Your Message</label>
           <textarea
-            id='message'
-            rows='5'
+            id="message"
+            rows="5"
             required
             value={enteredMessage}
-            onChange={(event) => setEnteredMessage(event.target.value)}
+            onChange={(event) => {
+              setEnteredMessage(event.target.value);
+              setErrors((s) => ({ ...s, message: undefined }));
+            }}
           ></textarea>
+          {errors.message && <p className={classes.error}>{errors.message}</p>}
         </div>
 
         <div className={classes.actions}>
-          <button>Send Message</button>
+          <button disabled={requestStatus === 'pending'}>Send Message</button>
         </div>
       </form>
+
       {notification && (
         <Notification
           status={notification.status}
